@@ -3,7 +3,7 @@
 Formulario público para recoger necesidades empresariales de toda Colombia. Cada envío solicita nombre del empresario, contacto, gremio, entidad, correo y necesidad, además de autorización para tratar los datos. El gremio es opcional.
 
 - Sitio: https://pmo-territorial-colombia.vercel.app/
-- Coordinación y destinatario: jose.gomez.lopez@colmayor.edu.co.
+- Coordinación y destinatario: jlopego1@gmail.com.
 - Supabase: proyecto independiente PMO Territorial Colombia (`kwnsllunphcgdgmpkiuj`), tabla `pmo_iniciativas`.
 
 El backend `pmo-submit` valida campos y consentimiento, limita solicitudes, guarda un UUID y no permite lectura pública. También acepta temporalmente el formato anterior para no interrumpir a quienes tuvieran abierta la versión previa. Los registros anteriores se conservan y los CSV incluyen sus campos junto con los nuevos. La tabla protege la consulta con RLS mediante el listado de administradores del proyecto. El panel privado usa el mismo correo de coordinación y Supabase Auth. Antes del primer acceso, el titular debe agregar la URL del sitio en Authentication → URL Configuration → Redirect URLs y abrir el enlace de inicio recibido en su correo.
